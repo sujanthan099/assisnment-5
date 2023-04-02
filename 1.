@@ -1,0 +1,28 @@
+
+
+with open("input.txt", "r") as input_file:
+
+
+
+    with open("error_log.txt", "w") as error_file:
+
+
+
+        for line in input_file:
+
+
+
+            if "error" in line.lower():
+
+
+
+                error_file.write(line)
+
+
+
+with open("error_log.txt", "r") as error_file:
+
+
+
+    print(error_file.read())
+
