@@ -1,0 +1,29 @@
+
+
+with open("data.bin", "rb") as binary_file:
+
+
+
+    byte_string = binary_file.read()
+
+
+
+    int_list = list(byte_string)
+
+
+
+    for i in range(len(int_list)):
+
+
+
+        if i % 16 == 0:
+
+            print()
+
+
+
+        print("{:02X}".format(int_list[i]), end=" ")
+
+
+
+    print()
